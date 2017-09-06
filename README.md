@@ -394,9 +394,9 @@ Property       |     |Type     |Description
 `temperature`  |     | Number  | Temperature (°C)
 `moving`       |     | Boolean | Moving state (true: moving)
 `acceleration` |     | Object  | Acceleration
-               | `x` | Number  | Acceleration on the X axis (milli G)
-               | `y` | Number  | Acceleration on the Y axis (milli G)
-               | `z` | Number  | Acceleration on the Z axis (milli G)
+--             | `x` | Number  | Acceleration on the X axis (milli G)
+--             | `y` | Number  | Acceleration on the Y axis (milli G)
+--             | `z` | Number  | Acceleration on the Z axis (milli G)
 
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
