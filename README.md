@@ -388,15 +388,15 @@ There are two types in the Estimote Telemetry beacon data: `Type A` and `Type B`
 
 The value of the `estimoteNearable` property contains the properties as follows:
 
-Property       |Type     |Description
-:--------------|:--------|:----------
-`nearableId`   | String  | Nearable identifier
-`temperature`  | Number  | Temperature (°C)
-`moving`       | Boolean | Moving state (true: moving)
-`acceleration` | Object  | Acceleration
-+ `x`          | Number  | Acceleration on the X axis (milli G)
-+ `y`          | Number  | Acceleration on the Y axis (milli G)
-+ `z`          | Number  | Acceleration on the Z axis (milli G)
+Property       |     |Type     |Description
+:--------------|:----|:--------|:----------
+`nearableId`   |     | String  | Nearable identifier
+`temperature`  |     | Number  | Temperature (°C)
+`moving`       |     | Boolean | Moving state (true: moving)
+`acceleration` |     | Object  | Acceleration
+               | `x` | Number  | Acceleration on the X axis (milli G)
+               | `y` | Number  | Acceleration on the Y axis (milli G)
+               | `z` | Number  | Acceleration on the Z axis (milli G)
 
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
