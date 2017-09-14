@@ -401,6 +401,8 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.0.2 (2017-09-15)
+  * Fixed a bug that an exception was thrown when an unknown packet came.
 * v0.0.1 (2017-09-06)
   * First public release
 
