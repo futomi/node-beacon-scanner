@@ -401,6 +401,8 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.1.0 (2018-07-14)
+  * Supported the Eddystone-UID of [Kontakt](https://kontakt.io/). The [spec of the Eddystone-UID](https://github.com/google/eddystone/tree/master/eddystone-uid) defines that the packet size is 20 bytes (the last 2 bytes are RFU). But the size of the packet form Kontakt device is 18 bytes.
 * v0.0.3 (2018-06-24)
   * Fixed a bug that an exception was thrown when an unknown packet came.
 * v0.0.2 (2017-09-15)
@@ -424,7 +426,7 @@ Property       |     |Type     |Description
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Futomi Hatano
+Copyright (c) 2017-2018 Futomi Hatano
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
