@@ -1,5 +1,5 @@
 {
-  "name": "node-beacon-scanner",
+  "name": "node-beacon-scanner-duplicates-check",
   "version": "0.1.1",
   "description": "The node-beacon-scanner is a Node.js module which allows you to scan BLE beacon packets and parse the packet data. This module supports iBeacon, Eddystone, and Estimote.",
   "main": "./lib/scanner.js",
@@ -23,12 +23,12 @@
     "IoT",
     "Internet of Things"
   ],
-  "homepage": "https://github.com/futomi",
-  "author": "Futomi Hatano <futomi.hatano@gmail.com> (https://github.com/futomi)",
+  "homepage": "https://github.com/joeldavidw/node-beacon-scanner-duplicates-check",
+  "author": "Joel-David Wong",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/futomi/node-beacon-scanner.git"
+    "url": "https://github.com/joeldavidw/node-beacon-scanner-duplicates-check"
   },
   "readmeFilename": "README.md",
   "dependencies": {
