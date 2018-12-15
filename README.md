@@ -1,4 +1,4 @@
-node-beacon-scanner
+node-beacon-scanner-duplicates-check
 ===============
 
 The node-beacon-scanner is a Node.js module which allows you to scan BLE beacon packets and parse the packet data. This module supports iBeacon, Eddystone, and Estimote.
