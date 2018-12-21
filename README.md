@@ -97,11 +97,11 @@ const scanner = new BeaconScanner({'noble': noble});
 
 // Set an Event handler for the Bluetooth service
 noble.on('stateChange', (state) => {
-    if (state === "poweredOff") {
-        scanner.stopScan()
-    } else if (state === "poweredOn") {
-        scanner.startScan()
-    }
+  if (state === "poweredOff") {
+    scanner.stopScan()
+  } else if (state === "poweredOn") {
+    scanner.startScan()
+  }
 });
 
 // Set an Event handler for becons
