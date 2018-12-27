@@ -432,6 +432,8 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.1.1 (2018-12-27)
+  * Fixed the bug that Eddystone beacons were not discovered if iBeacons were present as well. ([Thanks to @Tiggu](https://github.com/futomi/node-beacon-scanner/pull/8))
 * v0.1.0 (2018-07-14)
   * Supported the Eddystone-UID of [Kontakt](https://kontakt.io/). The [spec of the Eddystone-UID](https://github.com/google/eddystone/tree/master/eddystone-uid) defines that the packet size is 20 bytes (the last 2 bytes are RFU). But the size of the packet form Kontakt device is 18 bytes. ([Thanks to @EwaRvr](https://github.com/futomi/node-beacon-scanner/issues/3))
 * v0.0.3 (2018-06-24)
