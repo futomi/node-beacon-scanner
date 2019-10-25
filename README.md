@@ -16,17 +16,20 @@ The supported beacon data formats are as follows:
 ## Dependencies
 
 * [Node.js](https://nodejs.org/en/) 6 +
-* [noble](https://github.com/sandeepmistry/noble)
+* [@abandonware/noble](https://github.com/abandonware/noble)
 
-See the document of the [noble](https://github.com/sandeepmistry/noble) for details on installing the [noble](https://github.com/sandeepmistry/noble).
+See the document of the [@abandonware/noble](https://github.com/abandonware/noble) for details on installing the [@abandonware/noble](https://github.com/abandonware/noble).
 
-Note that the noble has to be run as root on most of Linux environments. Though the default user of Raspbian `pi` can run the noble on Raspbian, normal users can not access the BLE using the noble generally. See the document of the [noble](https://github.com/sandeepmistry/noble) for details.
+Note that the noble has to be run as root on most of Linux environments. See the the document of the [@abandonware/noble](https://github.com/abandonware/noble) for details.
+
+The early versions of this module depended on [noble](https://github.com/sandeepmistry/noble) for BLE handling. But the [noble](https://github.com/sandeepmistry/noble) seems not to support Node v10 or later versions. Now, this module is employing [@abandonware/noble](https://github.com/abandonware/noble), which was forked from [noble](https://github.com/sandeepmistry/noble). For the purouse of the backward compatibility, this module works with [noble](https://github.com/sandeepmistry/noble) on Node v8 or earlier versions.
+
 
 ## Installation
 
 ```
 $ cd ~
-$ npm install noble
+$ npm install @abandonware/noble
 $ npm install node-beacon-scanner
 ```
 
@@ -432,6 +435,8 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.2.0 (2019-10-25)
+  * Supported Node v10 or later versions thanks to [@abandonware/noble](https://github.com/abandonware/noble)
 * v0.1.1 (2018-12-27)
   * Fixed the bug that Eddystone beacons were not discovered if iBeacons were present as well. ([Thanks to @Tiggu](https://github.com/futomi/node-beacon-scanner/pull/8))
 * v0.1.0 (2018-07-14)
@@ -459,7 +464,7 @@ Property       |     |Type     |Description
 
 The MIT License (MIT)
 
-Copyright (c) 2017-2018 Futomi Hatano
+Copyright (c) 2017-2019 Futomi Hatano
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
