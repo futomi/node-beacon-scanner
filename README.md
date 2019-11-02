@@ -188,7 +188,7 @@ Property  |Type    |Description
 `minor`   | Number | Minor
 `txPower` | Number | Measured Power (dBm)
 
-### Eddystone-UID
+### <a id="BeaconScannerAdvertisement-object-eddystone">Eddystone-UID</a>
 
 ```JavaScript
 {
@@ -200,7 +200,7 @@ Property  |Type    |Description
   "beaconType": "eddystoneUid",
   "eddystoneUid": {
     "txPower": -35,
-    "namespece": "EDD1EBEAC04E5DEFA017",
+    "namespace": "EDD1EBEAC04E5DEFA017",
     "instance": "2D3EA3203B6B"
   }
 }
@@ -210,7 +210,7 @@ The value of the `eddystoneUid` property contains the properties as follows:
 
 Property     |Type    |Description
 :------------|:-------|:----------
-`namespece`  | String | Namespace ID
+`namespace`  | String | Namespace ID
 `instance`   | String | Instance ID
 `txPower`    | Number | Calibrated Tx power (dBm)
 
@@ -404,6 +404,8 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.2.1 (2019-11-02)
+  * Fixed a typo of a property name in the [`BeaconScannerAdvertisement` object for Eddystone](#BeaconScannerAdvertisement-object-eddystone) (`namespece` -> `namespace`). ([Thanks to @natcl](https://github.com/futomi/node-beacon-scanner/pull/10))
 * v0.2.0 (2019-10-25)
   * Supported Node v10 or later versions thanks to [@abandonware/noble](https://github.com/abandonware/noble)
 * v0.1.1 (2018-12-27)
