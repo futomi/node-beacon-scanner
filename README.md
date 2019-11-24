@@ -404,6 +404,9 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.2.2 (2019-11-24)
+  * Fixed a bug that the `txPower` of iBeacon was wrong. ([Thanks to @girtgirt](https://github.com/futomi/node-beacon-scanner/pull/12))
+  * Fixed a bug that an exception was thrown whenever it received an advertisement packet without service data. ([Thanks to @charlesread](https://github.com/futomi/node-beacon-scanner/issues/11))
 * v0.2.1 (2019-11-02)
   * Fixed a typo of a property name in the [`BeaconScannerAdvertisement` object for Eddystone](#BeaconScannerAdvertisement-object-eddystone) (`namespece` -> `namespace`). ([Thanks to @natcl](https://github.com/futomi/node-beacon-scanner/pull/10))
 * v0.2.0 (2019-10-25)
